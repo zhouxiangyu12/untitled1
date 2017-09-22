@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<context id="MysqlContext" targetRuntime="MyBatis3Simple"
+		defaultModelType="flat">
+
+		<!-- 通用Mapper的插件com.github.abel533.generator.MapperPlugin，该插件有一个必选的<property>属性mappers，这里的mappers和通用Mapper中的mappers配置含义一样，就是我们使用的通用Mapper接口，多个通用Mapper接口可以用逗号隔开 -->
+		<!-- 关于本插件，最重要的内容就是上面这个配置。下面要说的其他配置和普通的一致。 -->
+		<plugin type="com.github.abel533.generator.MapperPlugin">
+			<property name="mappers" value="com.github.abel533.mapper.Mapper" />
+		</plugin>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://127.0.0.1/test" userId="root"
+			password="root">
+		</jdbcConnection>
+
+		<javaModelGenerator targetPackage="com.example.mapper.entity"
+			targetProject="d:\bak\code\java">
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="xml"
+			targetProject="d:\bak\code\java" />
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.example.mapper" targetProject="d:\bak\code\java" />
+
+		<table tableName="user" domainObjectName="User">
+
+		</table>
+	</context>
+</generatorConfiguration>

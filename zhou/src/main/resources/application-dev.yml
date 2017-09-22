@@ -1,0 +1,8 @@
+#print sql
+#logging.level.com.malliance.ics.dbservice.busiPrescribeDetail.dao.BusiPrescribeDetailDao=DEBUG
+#logging.level.com.malliance.ics.dbservice.busiOrder.dao.BusiOrderDao=DEBUG
+#logging.level.com.malliance.ics.dbservice.registerInfo.dao.RegisterInfoDao=DEBUG
+#logging.level.com.malliance.ics.dbservice.disease.dao.DiseaseLevelDao=DEBUG
+#logging.level.com.malliance.ics.dbservice.disease.dao.DiseaseDicDao=DEBUG
+#logging.level.com.malliance.ics.dbservice.disease.dao.DiseaseRelativeDao=DEBUG
+#logging.level.com.malliance.ics.dbservice.rule.dao.RuleDataDao=DEBUG
